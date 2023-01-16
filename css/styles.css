@@ -229,8 +229,8 @@ img {
   .contact-mail,
   .contact-phone {
     display: block;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.33;
     color: var(--second-color);
     transition: color var(--duration-function);
   }
@@ -243,6 +243,10 @@ img {
   .contact-phone:hover,
   .contact-phone:focus {
     color: var(--accent-color);
+  }
+
+  .contact-mail {
+    margin-bottom: 4px;
   }
 }
 
@@ -260,12 +264,11 @@ img {
 
   .contact-mail,
   .contact-phone {
+    margin: 0;
     padding-top: 24px;
     padding-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--second-color);
-    transition: color var(--duration-function);
   }
 }
 
@@ -513,6 +516,7 @@ img {
   }
 
   .title-advantages {
+    text-align: start;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -752,9 +756,11 @@ img {
   padding-bottom: 100px;
   background-color: var(--second-background-color);
 }
+
 .logo-studio-bottom {
   color: #f4f4fd;
 }
+
 .footer-text {
   margin-top: 16px;
   width: 264px;
@@ -873,7 +879,6 @@ img {
   .cont-footer {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 108px;
   }
 
   .footer-logo {
@@ -896,11 +901,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .cont-footer {
+    max-width: 552px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /*******  min 1158  *******/
 
 @media screen and (min-width: 1158px) {
   .cont-footer {
-    padding-left: 15px;
     flex-wrap: nowrap;
   }
 
